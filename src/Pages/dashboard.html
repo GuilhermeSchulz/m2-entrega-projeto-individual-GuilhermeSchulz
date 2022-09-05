@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/img/favicon.png" type="image/x-icon">
+    <title>Kenzie Companies - Dashboard</title>
+</head>
+<body>
+    <header>
+        <img src="../img/logo-white-long.png" alt="Logo Kenzie Companies">
+        <div>
+            <button>Sair</button>
+            <button>
+                <img src="./src/img/night-mode.png" alt="Night Mode">
+                <img src="./src/img/sun.png" alt="Light Mode">
+                <div></div>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h2>Empresas</h2>
+            <div>
+                <h3>Criar Empresas</h3>
+                <button>Criar Empresa</button>
+            </div>
+            <div>
+                <h3>Listar Minhas Empresas</h3>
+                <button>Listar Minhas Empresas</button>
+            </div>
+            <div>
+                <h3>Listar Empresa Específica</h3>
+                <select name="CompanySelect" id="CompanySelect">
+
+                </select>
+                <button>Listar Empresa</button>
+            </div>
+            <div>
+                <h3>Listar Setores</h3>
+                <select name="SectorSelect" id="SectorSelect">
+
+                </select>
+                <button>Listar Setor</button>
+            </div>
+        </div>
+        <aside>
+            <h2>Departamentos</h2>
+            <div>
+                <h3>Criar Departamento</h3>
+                <select name="DepartmentCreateSelect" id="DepartmentCreateSelect">
+                </select>
+                <button>Criar Departamento</button>
+            </div>
+            <div>
+                <h3>Listar Departamentos</h3>
+                <select name="DepartmentListSelect" id="DepartmentListSelect">
+                </select>
+                <button>Listar Departamento</button>
+            </div>
+            <div>
+                <h3>Informações do Departamento</h3>
+                <select name="CompanyListSpecificSelect" id="CompanyListSpecificSelect">
+                </select>
+                <select name="DepartmentListSpecificSelect" id="DepartmentListSpecificSelect">
+                </select>
+                <button>Informações do Departamentos</button>
+            </div>
+            <div>
+                <h3>Contratar Funcionário</h3>
+                <select name="employeeContractCompany" id="employeeContractCompany">
+                </select>
+                <select name="employeeContractDepartment" id="employeeContractDepartment">
+                </select>
+                <button>Contratar Funcionário</button>
+            </div>
+            <div>
+                <h3>Demitir Funcionário</h3>
+                <select name="fireEmployeeCompany" id="fireEmployeeCompany">
+                </select>
+                <select name="fireEmployeeDepartment" id="fireEmployeeDepartment">
+                </select>
+                <button>Demitir Funcionário</button>
+            </div>
+            <div>
+                <h3>Listar Usuários</h3>
+                <button>Listar Usuários</button>
+            </div>
+        </aside>
+        <footer>
+            <h2>Setores:</h2>
+            <ul>
+                <li>
+                    <img src="../img/005-apple.png" alt="Alimentício">
+                    <h4>Alimentício</h4>
+                </li>
+                <li>
+                    <img src="../img/005-apple.png" alt="Alimentício">
+                    <h4>Alimentício</h4>
+                </li>
+                <li>
+                    <img src="../img/005-apple.png" alt="Alimentício">
+                    <h4>Alimentício</h4>
+                </li>
+                <li>
+                    <img src="../img/005-apple.png" alt="Alimentício">
+                    <h4>Alimentício</h4>
+                </li>
+                <li>
+                    <img src="../img/005-apple.png" alt="Alimentício">
+                    <h4>Alimentício</h4>
+                </li>
+                <li>
+                    <img src="../img/005-apple.png" alt="Alimentício">
+                    <h4>Alimentício</h4>
+                </li>
+            </ul>
+        </footer>
+    </main>
+    <section>
+        <div>
+            <h2>Cadastrar Empresa</h2>
+            <form>
+                <label for="companyName">Nome da Empresa:</label>
+                <input type="text" required name="companyName" placeholder="Nome da sua empresa">
+                <label for="companyTime">Horario de abertura:</label>
+                <input type="number" required name="companyTime" placeholder="0000" maxlength="4">
+                <label for="companyDescription">Descrição:</label>
+                <input type="text" required name="companyDescription" placeholder="Descrição da sua empresa">
+                <label for="companySector">Setor</label>
+                <select name="companySector" id="companySector">
+                </select>
+                <button>Cadastrar</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html> 
