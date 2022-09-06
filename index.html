@@ -5,102 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./src/img/favicon.png" type="image/x-icon">
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/buttons.css">
+    <link rel="stylesheet" href="./src/styles/containers.css">
+    <link rel="stylesheet" href="./src/styles/form.css">
+    <link rel="stylesheet" href="./src/styles/images.css">
+    <link rel="stylesheet" href="./src/styles/modal.css">
+    <link rel="stylesheet" href="./src/styles/text.css">
+    <link rel="stylesheet" href="./src/styles/media-768.css">
+    <link rel="stylesheet" href="./src/styles/media-1024.css">
     <title>Kenzie Companies - Homepage</title>
 </head>
 <body>
-    <main>
-        <div>
-            <img src="./src/img/logo-orange.png" alt="Logo Kenzie Companier">
-            <h1>Bem Vindo</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias dignissimos possimus vitae, optio error impedit libero omnis similique labore, voluptate nostrum earum, quisquam qui distinctio quibusdam ab inventore voluptatum obcaecati?</p>
-            <button>Login</button>
-            <button>Cadastro</button>
-            <button>
-                <img src="./src/img/night-mode.png" alt="Night Mode">
-                <img src="./src/img/sun.png" alt="Light Mode">
-                <div></div>
+    <main class="main">
+        <div class="main__container">
+            <img class="main__container--logo" src="./src/img/logo-orange.png" alt="Logo Kenzie Companier">
+            <h1 class="main__container--title">Bem Vindo</h1>
+            <p class="main__container--text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias dignissimos possimus vitae, optio error impedit libero omnis similique labore, voluptate nostrum earum, quisquam qui distinctio quibusdam ab inventore voluptatum obcaecati?</p>
+            <button class="main__button--primary">Login</button>
+            <button class="main__button--secondary">Cadastro</button>
+            <button class="main__button--darkmode">
+                <img class="main__darkmode--img" src="./src/img/night-mode.png" alt="Night Mode">
+                <img class="main__darkmode--img" src="./src/img/sun.png" alt="Light Mode">
+                <div class="main__darkmode--over"></div>
             </button>
         </div>
-        <div>
-            <h2>Empresas Parceiras</h2>
-            <div>
-                <h2>Alimentação</h2>
-                <div>
-                    <h3>Skina Lanches</h3>
-                    <h3>Descrição:</h3>
-                    <p>Podrão de qualidade</p>
-                    <span>09:00</span>
+        <div class="main__container">
+            <h2 class="main__container--title">Empresas Parceiras</h2>
+            <div class="main__container--company"> 
+                <h2 class="main__company--section">Alimentação</h2>
+                <div class="main__company--card">
+                    <img class="main__company--img" src="./src/img/005-apple.png" alt="">
+                    <h3 class="main__company--name">Skina Lanches</h3>
+                    <p class="main__company--description">Podrão de qualidade</p>
+                    <span class="main__company--time">09:00</span>
                 </div>
-                <div>
-                    <h3>Skina Lanches</h3>
-                    <h3>Descrição:</h3>
-                    <p>Podrão de qualidade</p>
-                    <span>09:00</span>
-                </div>
-            </div>
-            <div>
-                <h2>Alimentação</h2>
-                <div>
-                    <h3>Skina Lanches</h3>
-                    <h3>Descrição:</h3>
-                    <p>Podrão de qualidade</p>
-                    <span>09:00</span>
-                </div>
-                <div>
-                    <h3>Skina Lanches</h3>
-                    <h3>Descrição:</h3>
-                    <p>Podrão de qualidade</p>
-                    <span>09:00</span>
+                <div class="main__company--card">
+                    <img class="main__company--img" src="./src/img/005-apple.png" alt="">
+                    <h3 class="main__company--name">Skina Lanches</h3>
+                    <p class="main__company--description">Podrão de qualidade</p>
+                    <span class="main__company--time">09:00</span>
                 </div>
             </div>
-            <div>
-                <h2>Alimentação</h2>
-                <div>
-                    <h3>Skina Lanches</h3>
-                    <h3>Descrição:</h3>
-                    <p>Podrão de qualidade</p>
-                    <span>09:00</span>
+            <div class="main__container--company"> 
+                <h2 class="main__company--section">Alimentação</h2>
+                <div class="main__company--card">
+                    <img class="main__company--img" src="./src/img/005-apple.png" alt="">
+                    <h3 class="main__company--name">Skina Lanches</h3>
+                    <p class="main__company--description">Podrão de qualidade</p>
+                    <span class="main__company--time">09:00</span>
                 </div>
-                <div>
-                    <h3>Skina Lanches</h3>
-                    <h3>Descrição:</h3>
-                    <p>Podrão de qualidade</p>
-                    <span>09:00</span>
+                <div class="main__company--card">
+                    <img class="main__company--img" src="./src/img/005-apple.png" alt="">
+                    <h3 class="main__company--name">Skina Lanches</h3>
+                    <p class="main__company--description">Podrão de qualidade</p>
+                    <span class="main__company--time">09:00</span>
+                </div>
+            </div>
+            <div class="main__container--company"> 
+                <h2 class="main__company--section">Alimentação</h2>
+                <div class="main__company--card">
+                    <img class="main__company--img" src="./src/img/005-apple.png" alt="">
+                    <h3 class="main__company--name">Skina Lanches</h3>
+                    <p class="main__company--description">Podrão de qualidade</p>
+                    <span class="main__company--time">09:00</span>
+                </div>
+                <div class="main__company--card">
+                    <img class="main__company--img" src="./src/img/005-apple.png" alt="">
+                    <h3 class="main__company--name">Skina Lanches</h3>
+                    <p class="main__company--description">Podrão de qualidade</p>
+                    <span class="main__company--time">09:00</span>
                 </div>
             </div>
         </div>
-        <section>
-            <div>
-                <h2>Login</h2>
-                <button><img src="./src/img/cancel.png" alt="Fechar"></button>
-                <form>
-                    <label for="Email">Email:</label>
-                    <input type="email" required name="Email" placeholder="Digite o seu email!">
-                    <label for="Password">Password:</label>
-                    <input type="password" required name="Password" placeholder="Digite a sua senha!">
-                    <button type="submit">Login</button>
-                    <button>Cadastro</button>
+        <section class="main__modal hidden">
+            <div class="main__modal--container">
+                <div class="main__container--div">
+                    <h2 class="main__modal--title">Login</h2>
+                <button class="main__modal--close"><img class="main__modal--image" src="./src/img/cancel.png" alt="Fechar"></button>
+                </div>
+                <form class="main__modal--form">
+                    <label class="main__modal--label" for="Email">Email:</label>
+                    <input class="main__modal--input" type="email" required name="Email" placeholder="Digite o seu email!">
+                    <label class="main__modal--label" for="Password">Password:</label>
+                    <input class="main__modal--input" type="password" required name="Password" placeholder="Digite a sua senha!">
+                    <button class="main__button--primary" type="submit">Login</button>
+                    <button class="main__button--secondary">Cadastro</button>
                 </form>
             </div>
         </section>
-        <section>
-            <div>
-                <h2>Cadastro</h2>
-                <button><img src="./src/img/cancel.png" alt="Fechar"></button>
-                <form>
-                    <label for="UserSignup">Usuário:</label>
-                    <input type="text" required name="Name" placeholder="Digite o seu nome!">
-                    <label for="EmailSignup">Email:</label>
-                    <input type="email" required name="EmailSignup" placeholder="Digite o seu email!">
-                    <label for="SenhaSignup">Senha:</label>
-                    <input type="password" required name="SenhaSignup" placeholder="Digite o seu password!">
-                    <label for="LevelSignup">Nível de senioridade:</label>
-                    <input type="text" required name="LevelSignup" placeholder="Digite o seu nivel de senioridade!">
-                    <button type="submit">Cadastrar</button>
-                    <button>Login</button>
+        <section class="main__modal hidden">
+            <div class="main__modal--container">
+                <div class="main__container--div">
+                    <h2 class="main__modal--title">Cadastro</h2>
+                <button class="main__modal--close"><img class="main__modal--image" src="./src/img/cancel.png" alt="Fechar"></button>
+                </div>
+                <form class="main__modal--form">
+                    <label class="main__modal--label" for="UserSignup">Usuário:</label>
+                    <input class="main__modal--input" type="text" required name="Name" placeholder="Digite o seu nome!">
+                    <label class="main__modal--label" for="EmailSignup">Email:</label>
+                    <input class="main__modal--input" type="email" required name="EmailSignup" placeholder="Digite o seu email!">
+                    <label class="main__modal--label" for="SenhaSignup">Senha:</label>
+                    <input class="main__modal--input" type="password" required name="SenhaSignup" placeholder="Digite o seu password!">
+                    <label class="main__modal--label" for="LevelSignup">Nível de senioridade:</label>
+                    <select class="main__modal--input" name="LevelSignup" id="LevelSignup" required>
+                        <option value="estágio">Estagiário</option>
+                        <option value="júnior">Junior</option>
+                        <option value="pleno">Plêno</option>
+                        <option value="sênior">Sênior</option>
+                    </select>
+                    <button class="main__button--primary" type="submit">Cadastrar</button>
+                    <button class="main__button--secondary">Login</button>
                 </form>
             </div>
         </section>
     </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>

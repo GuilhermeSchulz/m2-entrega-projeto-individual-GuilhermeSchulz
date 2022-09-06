@@ -1,0 +1,28 @@
+.main__container--logo{
+    width: 250px;
+    height: 250px;
+}
+.main__darkmode--img{
+    width: 30px;
+    height: 30px;
+}
+.main__darkmode--over{
+    position: absolute;
+    left: 0;
+    width: 37px;
+    height: 37px;
+    background-color: var(--main-white);
+    border-radius: 50%;
+}
+.main__darkmode--over2{
+    position: absolute;
+    right: 0;
+    width: 37px;
+    height: 37px;
+    background-color: var(--main-white);
+    border-radius: 50%;
+}
+.main__company--img{
+    width: 50px;
+    height: 50px;
+}
