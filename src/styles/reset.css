@@ -1,0 +1,7 @@
+body, main, div, img, h1, p, button, h2, h3, span, label, input, form, section, select, option, footer, aside, ul, li, h4{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: var(--font-title);
+}
