@@ -1,0 +1,34 @@
+@media(min-width: 1024px){
+    .main{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    
+    .main__company--section{
+        max-width: 600px;
+    }
+    .main__button--primary{
+        transition: .8s;
+    }
+    .main__button--secondary{
+        transition: .8s;
+    }
+    .main__button--primary:hover{
+        transition: .8s;
+        background-color: var(--main-orange);
+    }
+    .main__button--secondary:hover{
+        transition: .8s;
+        color: var(--main-black);
+        background-color: var(--secondary-orange-opacity);
+    }
+    .main__company--card{
+        transition: .8s;
+    }
+    .main__company--card:hover{
+        transition: .8s;
+        transform: scale(1.25);
+        box-shadow: var(--shadow);
+    }
+}

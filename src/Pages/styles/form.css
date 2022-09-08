@@ -1,0 +1,28 @@
+.main__section--input{
+    padding: .5rem;
+    border: 1px solid var(--main-orange);
+    width: 100%;
+    font-size: var(--text-size-3);
+    border-radius: var(--border-radius-1);
+    color: var(--main-black);
+}
+.main__section--opt{
+    border-radius: var(--border-radius-1);
+}
+.main__modal--form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.main__modal--input{
+    padding: .5rem;
+    width: 100%;
+    font-size: var(--text-size-3);
+    border-radius: var(--border-radius-1);
+}
+.main__modal--input::placeholder{
+    color: var(--grey-4);
+}
