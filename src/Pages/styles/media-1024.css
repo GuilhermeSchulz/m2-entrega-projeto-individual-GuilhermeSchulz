@@ -15,6 +15,9 @@
     }
     .footer__container--list{
         max-width: 980px;
+        position: relative;
+        flex-direction: row;
+        height: max-content;
     }
     .main__button--primary:hover{
         transition: .8s;
@@ -24,6 +27,17 @@
         transition: .8s;
         color: var(--main-black);
         background-color: var(--secondary-orange-opacity);
+    }
+    .header__container--logout{
+        transition: .8s;
+    }
+    .header__container--logout:hover{
+        transition: .8s;
+        background-color: var(--secondary-orange-opacity);
+        color: var(--main-black);
+    }
+    .modal__list--coworkers{
+        flex-wrap: wrap;
     }
 }
 .hidden{
