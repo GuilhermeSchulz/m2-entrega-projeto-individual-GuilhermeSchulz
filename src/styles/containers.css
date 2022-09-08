@@ -2,6 +2,7 @@ body{
     width: 100%;
     height: max-content;
     background: var(--color-bg);
+    transition: .8s;
 }
 .main{
     width: 100%;

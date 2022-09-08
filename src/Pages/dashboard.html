@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Open+Sans:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/globalStyles.css">
     <link rel="stylesheet" href="./styles/containers.css">
@@ -20,6 +23,7 @@
     <link rel="stylesheet" href="./styles/media-1024.css">
     <title>Kenzie Companies - Dashboard</title>
 </head>
+
 <body>
     <header class="header__container">
         <img class="header__container--logo" src="../img/logo-white-short.png" alt="Logo Kenzie Companies">
@@ -28,7 +32,7 @@
             <button class="main__button--darkmode">
                 <img class="main__darkmode--img" src="../img/night-mode.png" alt="Night Mode">
                 <img class="main__darkmode--img" src="../img/sun.png" alt="Light Mode">
-                <div class="main__darkmode--over"></div>
+                <div class="main__darkmode--over2" id="cover__dark--mode"></div>
             </button>
         </div>
     </header>
@@ -37,48 +41,42 @@
             <h2 class="main__container--title">Empresas</h2>
             <div class="main__container--section">
                 <h3 class="main__section--title">Criar Empresas</h3>
-                <button class="main__button--primary">Criar Empresa</button>
+                <button class="main__button--primary" id="createCompany">Criar Empresa</button>
             </div>
             <div class="main__container--section">
                 <h3 class="main__section--title">Listar Minhas Empresas</h3>
-                <button class="main__button--primary">Listar Minhas Empresas</button>
+                <button class="main__button--primary" id="listCompanies">Listar Minhas Empresas</button>
             </div>
             <div class="main__container--section">
                 <h3 class="main__section--title">Listar Empresa Específica</h3>
                 <select class="main__section--input" name="CompanySelect" id="CompanySelect">
-                    <option value="Teste" class="main__section--opt">Teste</option>
+                    <!-- <option value="Teste" class="main__section--opt">Teste</option> -->
                 </select>
-                <button class="main__button--primary">Listar Empresa</button>
+                <button class="main__button--primary" id="listCompaniesSelect">Listar Empresa</button>
             </div>
             <div class="main__container--section">
                 <h3 class="main__section--title">Listar Setores</h3>
-                <select class="main__section--input" name="SectorSelect" id="SectorSelect">
-
+                <select aria-label="Selecione" class="main__section--input" name="SectorSelect" id="SectorSelect">
+                    
                 </select>
-                <button class="main__button--primary">Listar Setor</button>
+                <button class="main__button--primary" id="listSectorsBtn">Listar Setor</button>
             </div>
         </div>
+
         <aside class="main__container">
+            
             <h2 class="main__container--title">Departamentos</h2>
             <div class="main__container--section">
                 <h3 class="main__section--title">Criar Departamento</h3>
                 <select class="main__section--input" name="DepartmentCreateSelect" id="DepartmentCreateSelect">
                 </select>
-                <button class="main__button--primary">Criar Departamento</button>
+                <button class="main__button--primary" id="departmentCreateBtn">Criar Departamento</button>
             </div>
             <div class="main__container--section">
                 <h3 class="main__section--title">Listar Departamentos</h3>
                 <select class="main__section--input" name="DepartmentListSelect" id="DepartmentListSelect">
                 </select>
-                <button class="main__button--primary">Listar Departamento</button>
-            </div>
-            <div class="main__container--section">
-                <h3 class="main__section--title">Informações do Departamento</h3>
-                <select class="main__section--input" name="CompanyListSpecificSelect" id="CompanyListSpecificSelect">
-                </select>
-                <select class="main__section--input" name="DepartmentListSpecificSelect" id="DepartmentListSpecificSelect">
-                </select>
-                <button class="main__button--primary">Informações do Departamentos</button>
+                <button class="main__button--primary" id="listDepartmentsBtn">Listar Departamento</button>
             </div>
             <div class="main__container--section">
                 <h3 class="main__section--title">Contratar Funcionário</h3>
@@ -86,72 +84,41 @@
                 </select>
                 <select class="main__section--input" name="employeeContractDepartment" id="employeeContractDepartment">
                 </select>
-                <button class="main__button--primary">Contratar Funcionário</button>
+                <button class="main__button--primary" id="employeeContractBtn">Contratar Funcionário</button>
             </div>
             <div class="main__container--section">
                 <h3 class="main__section--title">Demitir Funcionário</h3>
-                <select class="main__section--input" name="fireEmployeeCompany" id="fireEmployeeCompany">
-                </select>
                 <select class="main__section--input" name="fireEmployeeDepartment" id="fireEmployeeDepartment">
                 </select>
-                <button class="main__button--primary">Demitir Funcionário</button>
+                <button class="main__button--primary" id="fireEmployeeBtn">Demitir Funcionário</button>
             </div>
             <div class="main__container--section">
                 <h3 class="main__section--title">Listar Usuários</h3>
-                <button class="main__button--primary">Listar Usuários</button>
+                <button class="main__button--primary" id="listUsers">Listar Usuários</button>
+            </div>
+            <div class="main__container--section">
+                <h3 class="main__section--title">Editar Usuários</h3>
+                <select class="main__section--input" name="editUser" id="editUser">
+                </select>
+                <button class="main__button--primary" id="editUsers">Editar Usuários</button>
             </div>
         </aside>
+        
     </main>
     <footer class="footer__container">
         <h2 class="main__container--title">Setores:</h2>
-        <ul class="footer__container--list">
-            <li class="footer__container--item">
-                <img class="footer__container--icon" src="../img/005-apple.png" alt="Alimentício">
-                <h4 class="footer__container--title">Alimentício</h4>
-            </li>
-            <li class="footer__container--item">
-                <img class="footer__container--icon" src="../img/005-apple.png" alt="Alimentício">
-                <h4 class="footer__container--title">Alimentício</h4>
-            </li>
-            <li class="footer__container--item">
-                <img class="footer__container--icon" src="../img/005-apple.png" alt="Alimentício">
-                <h4 class="footer__container--title">Alimentício</h4>
-            </li>
-            <li class="footer__container--item">
-                <img class="footer__container--icon" src="../img/005-apple.png" alt="Alimentício">
-                <h4 class="footer__container--title">Alimentício</h4>
-            </li>
-            <li class="footer__container--item">
-                <img class="footer__container--icon" src="../img/005-apple.png" alt="Alimentício">
-                <h4 class="footer__container--title">Alimentício</h4>
-            </li>
-            <li class="footer__container--item">
-                <img class="footer__container--icon" src="../img/005-apple.png" alt="Alimentício">
-                <h4 class="footer__container--title">Alimentício</h4>
-            </li>
-        </ul>
-    </footer>
-    <section class="main__modal hidden">
-        <div class="main__modal--container">
-            <div class="main__container--div">
-                <h2 class="main__container--title">Cadastro</h2>
-                <button class="main__modal--close"><img class="main__modal--image" src="../img/cancel.png" alt="Fechar"></button>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
             </div>
-            <form class="main__modal--form">
-                <label class="main__section--title"  for="companyName">Nome da Empresa:</label>
-                <input class="main__modal--input" type="text" required name="companyName" placeholder="Nome da sua empresa">
-                <label class="main__section--title" for="companyTime">Horario de abertura:</label>
-                <input class="main__modal--input" type="time" required name="companyTime" placeholder="0000" maxlength="4">
-                <label class="main__section--title" for="companyDescription">Descrição:</label>
-                <input class="main__modal--input" type="text" required name="companyDescription" placeholder="Descrição da sua empresa">
-                <label class="main__section--title" for="companySector">Setor</label>
-                <select class="main__modal--input" name="companySector" id="companySector">
-                </select>
-                <button class="main__button--primary">Cadastrar</button>
-            </form>
-        </div>
-    </section>
+          </div>
+    </footer>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="module" src="../scripts/utils/enum.js"></script>
+    <script type="module" src="../scripts/dashboard.js"></script>
 </body>
-</html> 
+
+</html>

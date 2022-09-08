@@ -8,6 +8,12 @@
     .main__company--section{
         max-width: 600px;
     }
+    .main__button--primary{
+        transition: .8s;
+    }
+    .main__button--secondary{
+        transition: .8s;
+    }
     .main__button--primary:hover{
         transition: .8s;
         background-color: var(--main-orange);

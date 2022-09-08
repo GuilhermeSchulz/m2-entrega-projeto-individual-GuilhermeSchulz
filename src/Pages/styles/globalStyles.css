@@ -33,5 +33,8 @@
 }
 
 .dark_mode:root{
-    --color-bg: #020202;
+    --color-bg: #1a1a1a;
+    --main-white: #010e1b;
+    --main-black: #FEA621;
+    --secondary-orange: #FF8000;
 }

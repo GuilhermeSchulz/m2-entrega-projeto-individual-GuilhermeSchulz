@@ -15,4 +15,10 @@
 }
 .main__company--name, .main__company--description, .main__company--time{
     font-family: var(--font-text);
+    font-size: var(--text-size-2);
+    letter-spacing: 0;
+}
+.main__company--name{
+    font-size: var(--title-size-2);
+    font-weight: var(--text-weight-1);
 }

@@ -1,0 +1,73 @@
+.main__modal{
+    top: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--grey-opacity-1);
+}
+.main__modal--container{
+    align-items: center;
+    height: max-content;
+    max-height: 600px;
+    width: 90%;
+    max-width: 600px;
+    background-color: var(--main-white);
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: var(--border-radius-2);
+    margin: 2rem auto;
+    transition: .8s;
+}
+.main__modal--containerlist{
+    align-items: center;
+    height: 900px;
+    width: 90%;
+    max-width: 600px;
+    background-color: var(--main-white);
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: var(--border-radius-2);
+    margin: 2rem auto;
+    transition: .8s;
+    max-height: 900px;
+    
+}
+.main__modal--list{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    align-items: center;
+}
+
+.modal__list--coworkers{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    overflow-y: auto;
+}
+
+
+.carousel-control-next {
+    right: -75px;
+    background-color: var(--main-orange);
+}
+
+.carousel-control-prev {
+    left: -75px;
+    background-color: var(--main-orange);
+}
+
+
+.carousel__text {
+    height: 160px;
+    width: 200px;
+}

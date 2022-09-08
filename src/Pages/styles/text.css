@@ -12,3 +12,7 @@
     font-weight: var(--title-weight-1);
     text-align: center;
 }
+.footer__container--title, .main__company--section,.main__company--time, .main__company--description{
+    color: var(--main-black);
+    text-align: center;
+}
